@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S-Vanguard</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/favicon.png">
+
+    <!-- Link Library-->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui@2.4.11/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="index">
+        <el-container>
+            <my-aside></my-aside>
+            <el-container class="is-vertical">
+                <el-main>
+                    <div>
+                        <h1>SWAPI - Star Wars API</h1>
+                    </div>
+                    <div>
+                        <h2>Introduction
+                            <div>
+                                SWAPI provides you an information query function for Star Wars films.
+                            </div>
+                        </h2>
+                    </div>
+                    <div>
+                        <h2>Dependency</h2>
+                        <my-dependency></my-dependency>
+                    </div>
+                    <div>
+                        <h2>Installation</h2>
+                    </div>
+                    <div>
+                        <h2>Usage
+                            <div>
+                                Input url like before and the result is returned in JSON format. If you are a member of our application, you can also enjoy the amazing parsing JSON function.
+                            </div>
+                        </h2>
+                    </div>
+                    <div>
+                        <h2>Contact</h2>
+                        <h3 id="email">Email
+                            <div>mrfive555@qq.com</div>
+                        </h3>
+                        <my-member></my-member>
+                    </div>
+                </el-main>
+            </el-container>
+        </el-container>
+    </div>
+</body>
+
+<!-- Personal Library -->
+<link rel="stylesheet" type="text/css" href="./css/global.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet" type="text/css" href="./assets/icon/iconfont.css">
+<script src="./js/global.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

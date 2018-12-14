@@ -1,1 +1,0 @@
-# S-Vanguard.github.io

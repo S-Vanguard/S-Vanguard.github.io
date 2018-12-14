@@ -1,0 +1,76 @@
+/* Aside bar */
+
+.el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+}
+
+.el-aside img {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.el-aside > div {
+    height: 100%;
+    width: 400px;
+    color: #ffffff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/img/bgimage.jpg);
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.el-aside .intro {
+    margin: 20px 0 0 10px;
+}
+
+.el-aside .icons {
+    margin: 40px 0 10px 0;
+}
+
+.el-aside .icons i {
+    display: block;
+}
+
+.el-aside .icons i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.el-aside .footer {
+    font-size: 10px;
+}
+
+/* Members */
+#group > div {
+    margin: 10px 0 0 5px;
+}
+
+#group .el-col {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#group .el-col:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 1px #000000;
+    border-radius: 10%;
+}
+
+#group img {
+    margin-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
