@@ -8,6 +8,7 @@ Vue.component('my-aside', {
     },
     methods: {
         toGithub: function() {
+            window.location.href = 'https://github.com/S-Vanguard';
         },
         toEmail: function() {
             document.getElementById('email').scrollIntoView(true);
@@ -92,7 +93,27 @@ Vue.component('my-dependency', {
 /************************* Member Component ********************************/
 Vue.component('my-member', {
     data: function() {
-        return {};
+        return {
+            members: [{
+                name: 'gitgiter',
+                avatar: 'https://avatars3.githubusercontent.com/u/31855605?s=96&v=4',
+            }, {
+                name: 'MrFive555',
+                avatar: 'https://avatars1.githubusercontent.com/u/29187436?s=96&v=4',
+            }, {
+                name: 'SiskonEmilia',
+                avatar: 'https://avatars0.githubusercontent.com/u/25914870?s=96&v=4',
+            }, {
+                name: 'sysuxwh',
+                avatar: 'https://avatars1.githubusercontent.com/u/29174401?s=96&v=4',
+            }, {
+                name: 'Xiongzj5',
+                avatar: 'https://avatars2.githubusercontent.com/u/25432901?s=96&v=4',
+            }, {
+                name: 'xwy27',
+                avatar: 'https://avatars3.githubusercontent.com/u/27471274?s=96&v=4',
+            }],
+        };
     },
     methods: {
         toMember: function(ele) {
@@ -107,29 +128,10 @@ Vue.component('my-member', {
     <h3 id="group">Members\
         <div>\
             <el-row :gutter="12">\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars3.githubusercontent.com/u/31855605?s=96&v=4">\
-                    <p>gitgiter</p>\
-                </el-col>\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars1.githubusercontent.com/u/29187436?s=96&v=4">\
-                    <p>MrFive555</p>\
-                </el-col>\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars0.githubusercontent.com/u/25914870?s=96&v=4">\
-                    <p>SiskonEmilia</p>\
-                </el-col>\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars1.githubusercontent.com/u/29174401?s=96&v=4">\
-                    <p>sysuxwh</p>\
-                </el-col>\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars2.githubusercontent.com/u/25432901?s=96&v=4">\
-                    <p>Xiongzj5</p>\
-                </el-col>\
-                <el-col :span="3" @click.native="toMember">\
-                    <img src="https://avatars3.githubusercontent.com/u/27471274?s=96&v=4">\
-                    <p>xwy27</p>\
+                <el-col :span="3" @click.native="toMember"\
+                    v-for="member in members">\
+                    <img :src="member.avatar">\
+                    <p>{{ member.name }}</p>\
                 </el-col>\
             </el-row>\
         </div>\
