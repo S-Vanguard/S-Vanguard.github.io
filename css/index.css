@@ -34,11 +34,16 @@ h3 > div {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #409eff;
 }
 
 a:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     display: inline-block;
     font-weight: bold;
+}
+
+
+img {
+    width: 100%;
 }
