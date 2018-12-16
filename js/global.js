@@ -2,7 +2,7 @@
 Vue.component('my-aside', {
     data: function() {
         return {
-            intro: 'A simple description of S-Vanguard & repository. A simple description of S-Vanguard & repository',
+            intro: 'A simple description of S-Vanguard & repository.',
             copyright: 'Copyright © 2018 S-Vanguard. All rights reserved.',
         };
     },
